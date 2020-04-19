@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/jtdb
+        username: root
+        password: 2453807X
+
+mybatis:
+  typeAliasesPackage: cn.smt666.ssm.pojo
+  mapperLocations: classpath:mappers/*.xml
+
+logging:
+  level: 
+    cn.smt666.ssm.mapper: debug
